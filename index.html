@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ecommerce</title>
+  <style>
+    .header{
+      display: inline-flex;
+    }
+    .header>*{
+      margin-right: 40px;
+    }
+    .flex-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .grid{
+      display: grid;
+      grid-template-columns: 80px 80px 80px 80px;
+      grid-template-rows: 300px 60px;
+      gap: 5px;
+    }
+    .item1-grid{
+      grid-area: 1/1/2/5;
+    }
+    .item2-grid{
+      grid-area: 2/1/3/2;
+    }
+    .item3-grid{
+      grid-area: 2/2/3/3;
+    }
+    .item4-grid{
+      grid-area: 2/3/3/4;
+    }
+    .item5-grid{
+      grid-area: 2/4/3/5;
+    }
+    .item1-info{
+      color: grey;
+      font-weight: bolder;
+      font-size: 14px;
+    }
+    .item2-info{
+      color: black;
+      font-weight: bolder;
+      font-size: 24px;
+    }
+    .item3-info{
+      color: grey; font-weight: bolder; font-size: 10px;
+    }
+    .item4-info{
+      display: inline-flex;
+    }
+    .item5-info{
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+     <div class="sneakers" style="color: black; font-weight: bolder; font-size: 24px;"><p>Sneakers</p></div>
+     <div class="collections"><p style="color: gray; margin-top: 30px;">collections</p></div>
+     <div class="men"><p style="color: gray; margin-top: 30px;">Men</p></div>
+     <div class="women"><p style="color: gray; margin-top: 30px;">Women</p></div>
+     <div class="about"><p style="color: gray; margin-top: 30px;">About</p></div>
+     <div class="contact"><p style="color: gray; margin-top: 30px;">Contact</p></div>
+     <div class="cart"><img src="images/icon-cart.svg" style="margin-top: 30px;"/></div>
+     <div class="avatar"><img src="images/image-avatar.png" style="width: 50px; margin-top: 15px;"/></div>
+  </div>
+  <hr style="height: 1px; border: none; color: lightgray; background-color: lightgray;"/>
+  <div class="flex-container">
+      <div class="grid">
+        <div class="item1-grid"><img src="images/image-product-1.jpg" style="height: 300px; width: 300px; border-radius: 12px;"/></div>
+        <div class="item2-grid"><img src="images/image-product-1-thumbnail.jpg" style="height: 60px; border-radius: 12px;"/></div>
+        <div class="item3-grid"><img src="images/image-product-2-thumbnail.jpg" style="height: 60px; border-radius: 12px;"/></div>
+        <div class="item4-grid"><img src="images/image-product-3-thumbnail.jpg" style="height: 60px; border-radius: 12px;"/></div>
+        <div class="item5-grid"><img src="images/image-product-4-thumbnail.jpg" style="height: 60px; border-radius: 12px;"/></div>
+      </div>
+      <div class="info">
+        <div class="item1-info"><p>SNEAKER COMPANY</p></div>
+        <div class="item2-info"><p>Fall Limited Edition Sneakers</p></div>
+        <div class="item3-info"><p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'l withstand everything the weather can offer</p></div>
+        <div class="item4-info">
+          <div class="inline1"><p style="
+            color: black;
+            font-weight: bolder;
+            font-size: 24px;">$125.00</p></div>
+          <div class="inline2"><p style="background-color: black; color: white; border-radius: 4px; width: 40px; text-align: center; margin-top: 30px; margin-left: 10px; font-weight: bold;">50%</p></div>
+        </div>
+        <div class="item5-info"><p>$250.00</p></div>
+        <div class="item6-info">
+          <button type="button" style="background-color: darkorange; width: 180px; border-radius: 6px; display: inline-flex;">
+           <div>
+            <img src="images/icon-cart.svg" style="margin-top: 6px; margin-left: 20px;"/>
+           </div>
+           <div>
+            <p style="color: white; margin-left: 10px;">Add to cart</p>
+           </div>
+          </button>
+        </div>
+      </div>
+  </div>
+</body> 
